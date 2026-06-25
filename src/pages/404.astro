@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>404 · Julio Polycarpo</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <main class="hero">
+      <p class="eyebrow">404</p>
+      <h1>Página não encontrada.</h1>
+      <p class="lede"><a href="/">Voltar ao início →</a></p>
+    </main>
+
+    <style>
+      .hero {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: clamp(4rem, 18vh, 9rem) 1.75rem;
+      }
+      .eyebrow {
+        margin: 0 0 1rem;
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(2rem, 6vw, 3rem);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
+      .lede {
+        margin: 0;
+        color: var(--muted);
+      }
+    </style>
+  </body>
+</html>

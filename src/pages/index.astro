@@ -1,0 +1,71 @@
+---
+import '../styles/global.css';
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://polycarpo.dev/" />
+    <title>Julio Polycarpo</title>
+    <meta
+      name="description"
+      content="Personal tech blog by Julio Polycarpo — notes, essays and tutorials. Coming soon."
+    />
+  </head>
+  <body>
+    <main class="hero">
+      <p class="eyebrow">polycarpo.dev</p>
+      <h1>Olá, mundo.</h1>
+      <p class="lede">
+        O blog está a caminho. <span lang="en">The blog is on its way.</span>
+      </p>
+    </main>
+    <footer class="site-footer">© {year} Julio Polycarpo</footer>
+
+    <style>
+      .hero {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: clamp(4rem, 18vh, 9rem) 1.75rem 2rem;
+      }
+      .eyebrow {
+        margin: 0 0 1.25rem;
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1.05;
+      }
+      .lede {
+        margin: 0;
+        max-width: 34ch;
+        font-size: 1.2rem;
+        color: var(--muted);
+      }
+      .lede span {
+        opacity: 0.7;
+      }
+      .site-footer {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 2rem 1.75rem 3rem;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+    </style>
+  </body>
+</html>
