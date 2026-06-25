@@ -1,0 +1,18 @@
+# build output
+dist/
+.astro/
+
+# deps
+node_modules/
+
+# bun: keep the text lockfile (bun.lock) committed; ignore the legacy binary one
+bun.lockb
+
+# env & local
+.env
+.env.*
+.dev.vars
+.wrangler/
+
+# os
+.DS_Store

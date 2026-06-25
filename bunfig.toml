@@ -1,0 +1,5 @@
+# Bun is the runtime and package manager for this project.
+# Astro/Vite run on Node-compatible APIs; Bun executes the CLI fine.
+[install]
+# Save resolved versions to bun.lock (committed) for reproducible installs.
+exact = false
