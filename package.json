@@ -28,7 +28,7 @@
     "@astrojs/check": "^0.9.9",
     "@biomejs/biome": "2.5.1",
     "dprint": "0.54.0",
-    "typescript": "^5.7.0",
+    "typescript": "^6.0.3",
     "wrangler": "^4.105.0"
   }
 }
