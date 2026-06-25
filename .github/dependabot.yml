@@ -9,14 +9,7 @@ updates:
     commit-message:
       prefix: ci
 
-  - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: weekly
-    commit-message:
-      prefix: chore
-    groups:
-      astro:
-        patterns:
-          - astro
-          - "@astrojs/*"
+# npm dependency updates are intentionally NOT handled by Dependabot: it does not
+# update Bun's text lockfile (bun.lock), so its PRs change only package.json and
+# then fail CI's `bun install --frozen-lockfile`. A Bun-aware tool (Renovate) is
+# tracked separately.
